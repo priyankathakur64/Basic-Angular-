@@ -1,0 +1,17 @@
+<p>eventbinding2 works!</p>
+
+<!--Change Event-->
+<input type="text" (change)="onChange()" class="form-control" placeholder="Change Event Example">
+<br><br>
+
+<!--K/B Event: KeyUp-->
+<input #inputname type="text" (keyup)="onKeyup(inputname)" class="form-control" placeholder="KeyUp Event Example">
+<br><br>
+
+<!--K/B Event: KeyDown-->
+<input type="text" (keydown)="onKeydown()" class="form-control" placeholder="Keydown Event Example">
+<br><br>
+
+<!--without Event Handler-->
+<button (click)="result=8+8">Addition</button>{{result}}
+<br><br>

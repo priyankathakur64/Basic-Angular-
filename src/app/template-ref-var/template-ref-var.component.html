@@ -1,0 +1,31 @@
+<p>template-ref-var works!</p>
+
+<input #inputname type="text" class="form-control w-25" placeholder="Enter name">
+<br>
+<button class="btn btn-success" (click)="onClick(inputname)">Click</button>
+<br>
+<hr>
+To get only value
+<input #inputname1 type="text" class="form-control w-25" placeholder="Enter name">
+<br><br>
+<button class="btn btn-success" (click)="onClick1(inputname1.value)">Click</button>
+<hr>
+To Add two number
+<div class="container">
+    <div class="mt-2 mb-2">
+        <label for="">Number1::</label>
+        <input #num1 type="number" class="form-control" placeholder="Enter a number">
+    </div>
+    <div class="mt-2 mb-2">
+        <label for="">Number2::</label>
+        <input #num2 type="number" class="form-control" placeholder="Enter a number">
+    </div>
+    <button class="btn btn-success" (click)="onAddition(num1.value,num2.value)">Addition</button>
+    <div class="mt-2 mb-2">
+        <label for="">Result::</label>
+        <input [value]="result" type="number" class="form-control" placeholder="Your result will displayed here">
+    </div>
+</div>
+<hr>
+ngModel
+<input class="form-control" [(ngModel)]="name" type="text" placeholder="Enter a name">{{name}}

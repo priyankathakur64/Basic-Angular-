@@ -1,0 +1,13 @@
+<p>propertybinding works!</p>
+
+<!-- Syntax: [attributeName]="propertyName" -->
+
+<input type="text" [value]="name">
+<br><br>
+<img [src]="url">
+<br><br>
+<h2>Difference between StringInterpolation and PropertyBinding</h2>
+
+<div hidden="{{isHidden}}">By String Interpolation</div>
+
+<div [hidden]="isHidden">By Property Binding</div>

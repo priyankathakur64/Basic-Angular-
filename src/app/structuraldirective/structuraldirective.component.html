@@ -1,0 +1,40 @@
+<p>structuraldirective works!</p>
+
+<!--ngIf and ng-template-->
+<h5>ngIf and ng-template</h5>
+<div *ngIf="rating<4;else myelsepart">
+    <h2>Condition is True</h2>
+</div>
+
+<ng-template #myelsepart>
+    <h2>Condition is False</h2>
+</ng-template>
+
+<!--ngFor-->
+<h3>ngFor Example</h3>
+<ul>
+    <li *ngFor="let item of course;index as i">
+      {{i+1}}  {{item}}
+    </li>
+</ul>
+
+<!--apply ngFor on table-->
+<h3>Apply ngFor on table</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrproduct;index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.qty}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+<p>task8 works!</p>
+<h6>Check whether number is even or odd</h6>
+
+<!--<input type="number" placeholder="Enter number">-->
+
+<div *ngIf="num%2==0;else elsepart">
+    <h2>Number is Even</h2>
+</div>
+
+<ng-template #elsepart>
+    <h2>Number is Odd</h2>
+</ng-template>

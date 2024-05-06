@@ -1,0 +1,14 @@
+.success{
+    color: green;
+}
+.danger{
+    color: red;
+}
+.warning{
+    color: yellow;
+}
+.special{
+    color: blueviolet;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

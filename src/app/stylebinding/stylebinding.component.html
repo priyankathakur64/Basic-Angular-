@@ -1,0 +1,14 @@
+<p>stylebinding works!</p>
+<h2 [style.color]="mycolor">StyLe Binding Applied successfully</h2>
+
+<!--to check for conditions-->
+<h2 [style.color]="rating<4?'red':'green'">StyLe Binding with conditions Applied successfully</h2>
+
+<!--Change background color as per conditions-->
+<p [style.background-color]="bgcolor">If you want to apply style dynamically to any html element we use Style Binding</p>
+
+<!--to check for conditions-->
+<p [style.background-color]="change<5?'yellow':'pink'">If you want to apply style dynamically to any html element we use Style Binding</p>
+
+<!--Multiple CSS properties-->
+<p [ngStyle]="jsonObj">Apply Multiple CSS properties</p>
